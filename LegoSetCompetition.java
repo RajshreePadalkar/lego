@@ -118,24 +118,24 @@ public class LegoSetCompetition {
 
 		if (player1.getPiecesBuilt() >= p1) {
 		    player1.setCompleteSets(name1);
-		    player1.setIncompleteSets(name2 + name3);
+		    player1.setIncompleteSets(name2 + "," + name3);
 		    if (player1.getPiecesBuilt() >= p1 + p2) {
-			player1.setCompleteSets(name1 + name2);
+			player1.setCompleteSets(name1 + "," + name2);
 			player1.setIncompleteSets(name3);
 			if (player1.getPiecesBuilt() >= (p1 + p2 + p3)) {
-			    player1.setCompleteSets(name1 + name2 + name3);
+			    player1.setCompleteSets(name1 + "," + name2 + "," + name3);
 			    player1.setIncompleteSets("");
 			}
 		    }
 		}
 		if (player2.getPiecesBuilt() >= p1) {
 		    player2.setCompleteSets(name1);
-		    player2.setIncompleteSets(name2 + name3);
+		    player2.setIncompleteSets(name1 + "," + name2);
 		    if (player2.getPiecesBuilt() >= p1 + p2) {
-			player2.setCompleteSets(name1 + name2);
+			player2.setCompleteSets(name1 + "," + name2);
 			player2.setIncompleteSets(name3);
 			if (player2.getPiecesBuilt() >= (p1 + p2 + p3)) {
-			    player2.setCompleteSets(name1 + name2 + name3);
+			    player2.setCompleteSets(name1 + "," + name2 + "," + name3);
 			    player2.setIncompleteSets("");
 			}
 		    }
